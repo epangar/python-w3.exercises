@@ -12,15 +12,18 @@ import sys
 def elements(size):
 
     if size < 1:
-        print("Bye!")
+        print('Bye!')
         sys.exit()
+    elif  size != int(size):
+        print('Sorry, I don''t understand')
+        elements(s)
     else:
         my_list = []
         
         print('We need you to add %s elements:' % str(size))
 
         for i in range(0,size):
-            element = input("Add an element: ")
+            element = input('Add an element: ')
             my_list.append(element)
             # new_tuple = (element)
             # my_tuple = my_tuple + new_tuple
@@ -28,8 +31,8 @@ def elements(size):
         my_tuple = (*my_list, )
         
 
-        print("My list is " + str(my_list))
-        print("My tuple is " + str(my_tuple))
+        print('My list is ' + str(my_list))
+        print('My tuple is ' + str(my_tuple))
         sys.exit()
 
 
