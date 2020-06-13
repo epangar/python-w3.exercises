@@ -17,7 +17,6 @@ def elements(size):
     else:
         my_list = []
         
-
         print('We need you to add %s elements:' % str(size))
 
         for i in range(0,size):
