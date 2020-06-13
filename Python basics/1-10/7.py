@@ -5,6 +5,7 @@ Output : java
 """
 
 def extension(file):
-    return file.split(".")
+    return file.split(".")[1]
 
 f = str(input('Please add name of file: '))
+print(extension(f))
