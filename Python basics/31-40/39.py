@@ -11,6 +11,3 @@ def my_program():
 
   for element in arr:
     print("%s" % element)
-
-
-my_program()
