@@ -11,4 +11,15 @@ def LCM(first, second):
       return first  
   
   else:
-    return 0
+    my_min = min([first, second])
+    my_max = max([first, second])
+    multiplier = 1
+    counter = my_min
+
+    while counter % my_max > 0:
+      multiplier += 1
+      counter = my_min * multiplier
+      
+    return counter
+
+print(LCM(3,10))
