@@ -4,6 +4,6 @@
 import struct
 
 def return_bits():
-    return struct.calcsize("P") * 8
+    return (struct.calcsize("P") * 8)
 
 print(return_bits)
