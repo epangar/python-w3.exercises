@@ -4,7 +4,7 @@
 
 def no_space(str, end):
   for i in range (0, end):
-      i = int(i)
+      i = int(i) #To stop the warning
       print(str, end ='')
   print('\n')
 
