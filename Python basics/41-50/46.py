@@ -3,4 +3,6 @@
 """
 
 import os
-print("Current File Name : ",os.path.realpath(__file__))
+
+def current_file_name():
+  print("Current File Name : ",os.path.realpath(__file__))

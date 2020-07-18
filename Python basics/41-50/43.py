@@ -4,6 +4,9 @@
 
 import platform
 import os
-print(os.name)
-print(platform.system())
-print(platform.release())
+
+
+def os_platform_and_release():
+  print(os.name)
+  print(platform.system())
+  print(platform.release())
