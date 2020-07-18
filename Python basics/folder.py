@@ -1,12 +1,14 @@
 from subprocess import call
 import os
+import sys
 
 
 
 
-
-def create_folders(start):
-
+def create_folders(input):
+  
+  print (input)
+  start = int(input[1])
   end = start + 9
   str_start = str(start)
   str_end = str(end)
@@ -28,4 +30,4 @@ def create_folders(start):
 
   os.chdir('../')
 
-create_folders(111)
+create_folders(sys.argv)
