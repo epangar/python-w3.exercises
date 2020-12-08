@@ -10,10 +10,5 @@ def prt_str(str):
     elif len(str) == 2:
         return str + str
     else:
-        str_len = len(str)
-        last_char, second_to_last = str[str_len-1], str[str_len-2]
-        return str[0]+str[1]+second_to_last+last_char
+        return str[:2]+str[-2:]
 
-print(prt_str('12345678'))
-print(prt_str('12'))
-print(prt_str('1'))
